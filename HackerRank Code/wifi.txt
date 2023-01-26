@@ -1,0 +1,12 @@
+SSID: Python
+Password: javapython12
+SSID: Multi Track Technology
+Password: drlab12445
+SSID: One Piece
+Password: nizamani00@
+SSID: OPPO Niz
+Password: ishaqueniz
+SSID: OPPO A1k
+Password: javapython
+SSID: Yami
+Password: Black@!#%

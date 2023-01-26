@@ -34,3 +34,6 @@ for i in range(0, n):
 
 print(grid)
 print(nextMove(n, r, c, grid))
+
+#i am adding this comment to check git diff comand 
+#fuck socity
