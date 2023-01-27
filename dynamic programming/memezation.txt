@@ -1,0 +1,16 @@
+how to use memozation and how to solve 
+problem using dynamic programming
+
+
+first make it work
+visulize the problem as a tree
+implement the tree as recurrtion
+test it
+
+
+
+
+second optimization 
+add a memo object 
+add a base case  to return memo values
+store retrun values into the memo
