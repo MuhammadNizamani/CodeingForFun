@@ -12,9 +12,9 @@ def find_folders(path):
     return folder_names, folder_links
 
 
-folder_names, folder_links = find_folders("D:\\")
+folder_names, folder_links = find_folders("E:\\")
 
-print("Folders in D drive:")
+print("Name of file")
 for i, folder in enumerate(folder_names):
-    if folder == "hidden file name":
+    if folder == "OpenLabeling":
         print(f"{i+1}. {folder} ({folder_links[i]})")
