@@ -16,10 +16,11 @@ data_dict = {'value2': np.ones(10, dtype=float), 'value': np.zeros(10, dtype=flo
 
 dd = pd.DataFrame(index=index, columns=table.columns)
 dd = dd.assign(**data_dict)
-print('**** Original ****')
+print('**** Original ****', type(dd))
 print(dd.head())
 print('**** Bad Copy ****')
-print(dd.copy().head())
+cc = dd.copy().head()
+print(cc)
 
 print('**** 1D ndarray ****')
 data_dict['name'] = data_dict['name'][:, 0]
