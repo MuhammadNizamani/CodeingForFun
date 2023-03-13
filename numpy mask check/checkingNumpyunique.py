@@ -17,8 +17,8 @@ print(counts)
 
 
 # In this example, the arr array contains three rows of numbers.
-# We want to find the unique rows and their respective counts along the 
-# vertical axis (axis 0). To do this, we pass return_counts=True and axis=0 
+# We want to find the unique rows and their respective counts along the
+# vertical axis (axis 0). To do this, we pass return_counts=True and axis=0
 # to the np.unique function. The resulting unique_elements array contains the
-# unique rows, and the counts array contains the number of occurrences of each 
-# unique row
+# unique rows, and the counts array contains the number of occurrences of each
+# unique rowjk
