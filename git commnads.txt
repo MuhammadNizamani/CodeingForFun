@@ -1,3 +1,47 @@
 how to delete commit 
  git reset --soft HEAD~1
 2. git push origin +main --force
+
+
+all about branch
+how to create branch
+
+# git branch name_of_the_branch
+
+also you can create branch from the commit that you want you just revision number
+
+# git branch name_of_the_branch 2b504bee
+
+we always create branch locally on our PC
+
+to activate the branch
+
+#git switch branch_name
+
+changing the name of the head branch
+
+#git branch -m name_of_head_branch
+
+changing the name of the branch other then head branch
+
+# git branch -m name_of_old_beanch name_of_new_branch
+
+Publidhing the branch
+
+publishib branch for local system
+
+# git push -u origin name_of_the_branch
+
+Tracking the branch 
+ how to take branch from remote to local
+
+# git branch --track featue/name_of_the_branch origin/feature/login
+
+pullling pushing and list of the branch
+# git pull
+#git push
+# git branch -v
+
+comparing the btanch 
+
+git log main..<name_of_the_branch>
