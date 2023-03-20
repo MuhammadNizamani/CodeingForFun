@@ -12,9 +12,9 @@ def find_folders(path):
     return folder_names, folder_links
 
 
-folder_names, folder_links = find_folders("E:\\")
+folder_names, folder_links = find_folders("D:\\")
 
 print("Name of file")
 for i, folder in enumerate(folder_names):
-    if folder == "OpenLabeling":
+    if folder == "recapacha":
         print(f"{i+1}. {folder} ({folder_links[i]})")
