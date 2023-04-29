@@ -20,23 +20,20 @@ class Anime:
     
         # Parse the HTML content using BeautifulSoup
         soup = BeautifulSoup(html_content, 'html.parser')
-        #print(soup)
-        # Find all the anime titles on the page
         anime_titles = soup.find_all('a',)
-        # print(anime_titles)
         # Search for the given product name in the list of anime titles
         for i, anime_title in enumerate(anime_titles):
                 if anime_title.text.strip() == "A Channel":
                      Isanimelist = True
                 if Isanimelist:
                     print(anime_title.text.strip())
+                    animeList.append(self.merge_link(str(anime_title)))
                 if anime_title.text.strip() == "Ai Tenchi Muyou!":
                     Isanimelist= False
-                    # print(anime_title)
-                    # return self.merge_link(str(anime_title))
+                   
     
-        # If the product was not found, return None
-        return None
+         
+        return animeList
     
 
     
@@ -44,4 +41,5 @@ anime = Anime()
 url = "https://www3.gogoanimes.fi/anime-list-A"
 product_name = "A Day Before Us"
 html = anime.search_product(url, product_name)
-print(html)
+for link in html:
+     print(link)
