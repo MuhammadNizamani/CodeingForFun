@@ -11,7 +11,7 @@ class Anime:
         # print(self.url1+href)
         return self.url1+href
     
-    def search_product(self, url= 'https://www3.gogoanimes.fi/anime-list-A'):
+    def search_anime(self, url= 'https://www3.gogoanimes.fi/anime-list-A'):
         animeList = []
         Isanimelist = False
         # Send GET request to the URL and get the HTML content
@@ -26,7 +26,7 @@ class Anime:
                 if anime_title.text.strip() == "A Channel":
                      Isanimelist = True
                 if Isanimelist:
-                    print(anime_title.text.strip())
+                    # print(anime_title.text.strip())
                     animeList.append(self.merge_link(str(anime_title)))
                 if anime_title.text.strip() == "Ai Tenchi Muyou!":
                     Isanimelist= False
@@ -37,9 +37,9 @@ class Anime:
     
 
     
-anime = Anime()
-html = anime.search_product()
-for link in html:
-     print(link)
+# anime = Anime()
+# html = anime.search_product()
+# for link in html:
+#      print(link)
 
     
