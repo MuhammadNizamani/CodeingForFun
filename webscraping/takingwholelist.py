@@ -11,7 +11,7 @@ class Anime:
         # print(self.url1+href)
         return self.url1+href
     
-    def search_product(self, url, product_name):
+    def search_product(self, url= 'https://www3.gogoanimes.fi/anime-list-A'):
         animeList = []
         Isanimelist = False
         # Send GET request to the URL and get the HTML content
@@ -38,8 +38,8 @@ class Anime:
 
     
 anime = Anime()
-url = "https://www3.gogoanimes.fi/anime-list-A"
-product_name = "A Day Before Us"
-html = anime.search_product(url, product_name)
+html = anime.search_product()
 for link in html:
      print(link)
+
+    
