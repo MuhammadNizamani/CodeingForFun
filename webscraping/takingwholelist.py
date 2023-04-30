@@ -38,7 +38,7 @@ class Anime:
 
     
 # anime = Anime()
-# html = anime.search_product()
+# html = anime.search_anime()
 # for link in html:
 #      print(link)
 
