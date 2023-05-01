@@ -38,10 +38,12 @@ def one_anime_data(url):
 anime = Anime()
 animelink = anime.search_anime()
 list_of_dict_data = []
+i = 1
 for one_anime in animelink:
-    
+    print(f"Data is taking from link number {i}")
     list_of_dict_data.append(one_anime_data(one_anime))
+    i+=1
     
 
 df = pd.DataFrame(list_of_dict_data)
-df.to_csv('data_A.csv', index=False)
+df.to_csv('data_31.csv', index=False)

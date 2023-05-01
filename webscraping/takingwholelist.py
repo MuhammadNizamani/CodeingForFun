@@ -11,7 +11,7 @@ class Anime:
         # print(self.url1+href)
         return self.url1+href
     
-    def search_anime(self, url= 'https://www3.gogoanimes.fi/anime-list-A'):
+    def search_anime(self, url= 'https://www3.gogoanimes.fi/anime-list-A?page=5'):
         animeList = []
         Isanimelist = False
         # Send GET request to the URL and get the HTML content
@@ -23,12 +23,12 @@ class Anime:
         anime_titles = soup.find_all('a',)
         # Search for the given product name in the list of anime titles
         for i, anime_title in enumerate(anime_titles):
-                if anime_title.text.strip() == "A Channel":
+                if anime_title.text.strip() == "Arifureta Shokugyou de Sekai Saikyou: Prologue":
                      Isanimelist = True
                 if Isanimelist:
                     # print(anime_title.text.strip())
                     animeList.append(self.merge_link(str(anime_title)))
-                if anime_title.text.strip() == "Ai Tenchi Muyou!":
+                if anime_title.text.strip() == "Azur Lane: Bisoku Zenshin! Hokorashiki Bokou ni Shukusai wo":
                     Isanimelist= False
                    
     
@@ -36,7 +36,8 @@ class Anime:
         return animeList
     
 
-    
+
+ 
 # anime = Anime()
 # html = anime.search_anime()
 # for link in html:
