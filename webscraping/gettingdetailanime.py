@@ -46,4 +46,4 @@ for one_anime in animelink:
     
 
 df = pd.DataFrame(list_of_dict_data)
-df.to_csv('data_31.csv', index=False)
+df.to_csv('data_103.csv', index=False)
