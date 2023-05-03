@@ -11,7 +11,7 @@ class Anime:
         # print(self.url1+href)
         return self.url1+href
     
-    def search_anime(self, url= 'https://www3.gogoanimes.fi/anime-list-Y?page=3'):
+    def search_anime(self, url= 'https://www3.gogoanimes.fi/anime-list-D?page=3'):
         animeList = []
         Isanimelist = False
         # Send GET request to the URL and get the HTML content
@@ -23,12 +23,12 @@ class Anime:
         anime_titles = soup.find_all('a',)
         # Search for the given product name in the list of anime titles
         for i, anime_title in enumerate(anime_titles):
-                if anime_title.text.strip() == "Yuki no Joou (TV)":
+                if anime_title.text.strip() == "Devilman Lady (Dub)":
                      Isanimelist = True
                 if Isanimelist:
                     # print(anime_title.text.strip())
                     animeList.append(self.merge_link(str(anime_title)))
-                if anime_title.text.strip() == "Yuyushiki: Komarasetari, Komarasaretari":
+                if anime_title.text.strip() == "Devilman: Tanjou-hen (Dub)":
                     Isanimelist= False
                    
     
