@@ -4,6 +4,7 @@ from google.cloud import texttospeech_v1
 from IPython.display import Audio
 from playsound import playsound
 import time
+# this will work when you have api key of gcp
 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'mvprun-auth-e1de5fad33d3.json'
 clint = texttospeech_v1.TextToSpeechClient()
