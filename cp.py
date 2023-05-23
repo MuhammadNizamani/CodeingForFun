@@ -7,6 +7,7 @@ for i in A:
     for j in B:
         a = (i,j)
         print(a,end = " ")
+        print("chec")
         # C.append(a)
 
 
