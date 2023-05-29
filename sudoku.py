@@ -61,3 +61,4 @@ if solve(grid,0,0):
 else:
     print("no solution for this sudoku")
 
+# solve this using dynamic programming
