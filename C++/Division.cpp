@@ -13,7 +13,7 @@ reminder = dividend % divisor;
 cout << "Quotient = " << quotient <<endl ;
 cout << "Reminder = " << reminder ;
 
-
+// this code is different from this PR
 return 0;
 
 
