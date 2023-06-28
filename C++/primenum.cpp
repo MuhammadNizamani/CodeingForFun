@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 int main(){
-
+// this code is done zabi and GG zabi you have done it 
 int d,i,c = 0;
 cout << "Enter a number: ";
 cin >> d;
