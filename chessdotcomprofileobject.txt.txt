@@ -1,0 +1,17 @@
+BABU_69
+{
+'avatar':'https://images.chesscomfiles.com/uploads/v1/user/174473465.19c57278.200x200o.56cda431e7dd.jpeg',
+'player_id': 174473465, '@id': 'https://api.chess.com/pub/player/babu_69', 
+'url': 'https://www.chess.com/member/BABU_69', 
+'name': 'Ammar Nizamani',
+'username': 'babu_69',
+'followers': 37, 
+'country': 'https://api.chess.com/pub/country/PK',
+'last_online': 1694518988, 
+'joined': 1645761329, 
+'status': 'premium', 
+'is_streamer': False, 
+'verified': False, 
+'league': 'Champion'
+
+}

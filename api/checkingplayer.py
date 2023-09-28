@@ -2,11 +2,11 @@ import urllib3
 import json
 
 # List of players
-players = ["wdfsf","BABU_69", "hamidullahnizamani", "Zararnizamani", "muhammadnizamani", "salmannizamani7",
+players = ["BABU_69", "hamidullahnizamani", "Zararnizamani", "muhammadnizamani", "salmannizamani7",
         "UmAr212212", "Alinizamani101", "inamullahniz6", "GUMNAM_69", "sarwan920"]
 
 for player in players:
-    print(player)
+    # print(player)
 
     # Make an HTTP GET request to the Chess.com API
     url =  f"https://api.chess.com/pub/player/{player}"
@@ -26,7 +26,8 @@ for player in players:
             # print(f"Rapid Rating for {player}: {rapid_rating}")
             # # print(f"Bullet Rating for {player}: {bullet_rating}")
             # print(f"Blitz Rating for {player}: {blitz_rating}")
-            print(data)
+            print(data["followers"])
+            
 
             # You can use these rating values to update your HTML elements as needed
         else:
