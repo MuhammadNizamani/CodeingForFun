@@ -35,3 +35,5 @@ if idm > idp:
         print(p*"UP\n", p*"LEFT\n", end="")
     else:
         print(p*"UP\n", p*"RIGHT\n", end="")
+
+# This task is taken for hackerrand
